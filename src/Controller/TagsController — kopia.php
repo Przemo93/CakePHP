@@ -12,6 +12,7 @@ use App\Controller\AppController;
  */
 class TagsController extends AppController
 {
+
     /**
      * Index method
      *
@@ -78,10 +79,11 @@ class TagsController extends AppController
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $tag = $this->Tags->patchEntity($tag, $this->request->getData());
-			
+			$jsonData = $this->request->input('json_decode');
             if ($this->Tags->save($tag)) {
 				
-                $this->Flash->success(__('The tag has been saved.'));
+				$this->Flash->success(__($tag));
+                //$this->Flash->success(__('The tag has been saved.'));
 
                 return $this->redirect(['action' => 'index']);
             }

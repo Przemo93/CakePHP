@@ -48,9 +48,9 @@ $cakeDescription = 'CakePHP: the rapid development PHP framework';
 	<h2>Bookmarks app</h1>
 	<div class="button-container">
 		<div class="inner">
-			<h3><a href="/REST/users">Show users</a></h3>
-			<h3><a href="/REST/bookmarks">Show bookmarks</a></h3>
-			<h3><a href="/REST/tags">Show tags</a></h3>
+			<h3><a href="/restful/users">Show users</a></h3>
+			<h3><a href="/restful/bookmarks">Show bookmarks</a></h3>
+			<h3><a href="/restful/tags">Show tags</a></h3>
 		</div>
 	</div>
 
